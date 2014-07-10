@@ -1,0 +1,6 @@
+currency.Currency.add:
+  route_name: currency.Currency.add
+  title: 'Add Currency'
+  appears_on:
+    - currency.Currency.list
+    - currency.Currency.view

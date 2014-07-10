@@ -1,0 +1,10 @@
+currency.Currency.list:
+  title: 'Currency: Listing'
+  route_name: currency.Currency.list
+  description: 'List Currency'
+  weight: 10
+currency.Currency.admin.structure.settings:
+  title: Currency Settings
+  description: 'Configure Currency entity'
+  route_name:  currency.Currency.settings
+  parent: system.admin_structure

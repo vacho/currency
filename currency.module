@@ -1,0 +1,37 @@
+<?php
+
+/**
+ * @file
+ * Contains currency.module
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+
+function currency_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+    // Main module help for the currency module.
+    case 'help.page.currency':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Currency module') . '</p>';
+      return $output;
+    break;
+  }
+}
+
+
+/**
+ * Implements hook_theme().
+ */
+
+function currency_theme()
+{
+  $theme = [];
+
+  return $theme;
+}

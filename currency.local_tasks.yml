@@ -1,0 +1,17 @@
+Currency.settings_tab:
+  route_name: currency.Currency.settings
+  title: 'Settings'
+  base_route: currency.Currency.settings
+currency.Currency.view:
+  route_name: currency.Currency.view
+  base_route: currency.Currency.view
+  title: 'View'
+Currency.edit:
+  route_name: currency.Currency.edit
+  base_route: currency.Currency.view
+  title: Edit
+Currency.delete_confirm:
+  route_name:  currency.Currency.delete
+  base_route:  currency.Currency.view
+  title: Delete
+  weight: 10
