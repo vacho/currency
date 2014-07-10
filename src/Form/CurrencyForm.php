@@ -1,12 +1,12 @@
 <?php
 /**
  * @file
- * Definition of Drupal\currency\Entity\Form\CurrencyFormController.
+ * Definition of Drupal\currency\Entity\Form\CurrencyForm.
  */
 
 namespace Drupal\currency\Form;
 
-use Drupal\Core\Entity\CurrencyEntityForm;
+use Drupal\Core\Entity\ContentEntityForm;
 use Drupal\Core\Language\Language;
 
 /**

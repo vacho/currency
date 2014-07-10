@@ -12,7 +12,7 @@ currency.Currency.view:
     _entity_view: 'Currency'
     _title: 'Currency Content'
   requirements:
-    _entity_access: 'currency.Currency.view'
+    _entity_access: 'Currency.view'
 
 currency.Currency.list:
   path: '/admin/config/system/currency/Currency'
@@ -20,36 +20,36 @@ currency.Currency.list:
     _entity_list: 'Currency'
     _title: 'Currency List'
   requirements:
-    _permission: 'administer site configuration'
+    _permission: 'view Curreny entity'
 
 currency.Currency.add:
   path: '/admin/config/system/currency/Currency/add'
   defaults:
-    _entity_form: currency.Currency.add
+    _entity_form: Currency.add
     _title: 'Add Currency'
   requirements:
-    _entity_create_access: 'currency.Currency'
+    _entity_create_access: 'Currency'
 
 currency.Currency.edit:
   path: '/admin/config/system/currency/Currency/{Currency}/edit'
   defaults:
-    _entity_form: currency.Currency.edit
+    _entity_form: Currency.edit
     _title: 'Edit Currency'
   requirements:
-    _entity_access: 'currency.Currency.edit'
+    _entity_access: 'Currency.edit'
 
 currency.Currency.delete:
   path: '/admin/config/system/currency/Currency/{Currency}/delete'
   defaults:
-    _entity_form: currency.Currency.delete
+    _entity_form: Currency.delete
     _title: 'Delete Currency'
   requirements:
-    _entity_access: 'currency.Currency.delete'
+    _entity_access: 'Currency.delete'
 
 currency.Currency.settings:
   path: 'admin/structure/currency/manage/Currency'
   defaults:
-   _form: '\Drupal\Currency\Form\CurrencySettingsForm'
+   _form: '\Drupal\currency\Form\CurrencySettingsForm'
    _title: 'Currency Settings'
   requirements:
     _permission: 'administer Currency entity'

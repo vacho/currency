@@ -33,7 +33,7 @@ class CurrencyListController extends EntityListBuilder {
     /* @var $entity \Drupal\currency\Entity\Currency */
     $row['id'] = $entity->id();
     $row['name'] = \Drupal::l($this->getLabel($entity),
-      'currency.Currency', array(
+      'currency.Currency.list', array(
         'currency_Currency' => $entity->id(),
       ));
     return $row + parent::buildRow($entity);
